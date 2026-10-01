@@ -1,0 +1,120 @@
+/* =========================
+   DELÍCIAS DA NILZA
+   ESTILOS PERSONALIZADOS
+========================= */
+
+:root {
+    --brand-cream: #fffaf0;
+    --brand-sand: #f3e8d0;
+    --brand-orange: #e67e22;
+    --brand-terracotta: #c65d32;
+    --brand-dark: #3d2b1f;
+    --brand-medium: #665044;
+}
+
+/* Cores utilizadas pelo Tailwind */
+.bg-brand-cream {
+    background-color: var(--brand-cream);
+}
+
+.bg-brand-sand {
+    background-color: var(--brand-sand);
+}
+
+.bg-brand-dark {
+    background-color: var(--brand-dark);
+}
+
+.bg-brand-orange {
+    background-color: var(--brand-orange);
+}
+
+.bg-brand-medium {
+    background-color: var(--brand-medium);
+}
+
+.text-brand-cream {
+    color: var(--brand-cream);
+}
+
+.text-brand-sand {
+    color: var(--brand-sand);
+}
+
+.text-brand-dark {
+    color: var(--brand-dark);
+}
+
+.text-brand-orange {
+    color: var(--brand-orange);
+}
+
+.text-brand-terracotta {
+    color: var(--brand-terracotta);
+}
+
+.text-brand-medium {
+    color: var(--brand-medium);
+}
+
+.border-brand-sand {
+    border-color: var(--brand-sand);
+}
+
+.border-brand-medium {
+    border-color: var(--brand-medium);
+}
+
+/* Fonte dos títulos */
+.font-serif-title {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Esconder scrollbar horizontal */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Animações */
+.menu-tab-content {
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botões do construtor */
+.builder-size-btn.active {
+    border-color: var(--brand-dark);
+    background-color: var(--brand-dark);
+    color: white;
+}
+
+.builder-carb-btn.active,
+.builder-meat-btn.active,
+.builder-side-btn.active {
+    border-color: var(--brand-orange);
+    background-color: rgba(230, 126, 34, 0.10);
+    color: var(--brand-terracotta);
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+    .font-serif-title {
+        letter-spacing: -0.02em;
+    }
+}
